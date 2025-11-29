@@ -16,7 +16,7 @@ Communication between Flutter and Android is done using **MethodChannels**.
 ---
 
 ## 📁 Project Structure
-
+```bash
 project/
 ├── lib/
 │   └── main.dart
@@ -31,7 +31,7 @@ project/
                             └── batterystat/
                                 └── MainActivity.kt
 
-
+```
 How to Run?
 
 Connect your Android device → enable USB Debugging
