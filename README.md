@@ -1,16 +1,35 @@
-# batterystat
+# 📱 Battery Status App (Flutter + Kotlin)
 
-A new Flutter project.
+A simple Flutter application that reads **battery percentage** and **charging status** from **native Android (Kotlin)** without using any third-party plugins.  
+Communication between Flutter and Android is done using **MethodChannels**.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+##  Features
 
-A few resources to get you started if this is your first Flutter project:
+-  Get Battery Level (0–100%)
+-  Detect Charging or Discharging status
+-  Uses Android's native **BatteryManager** API
+-  Flutter ↔ Kotlin communication using **MethodChannel**
+-  No third-party plugins (battery_plus not used)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📁 Project Structure
+/lib
+  └── main.dart   # Flutter UI + MethodChannel calls
+
+/android/app/src/main/kotlin/<package>/
+  └── MainActivity.kt  # Native Android battery logic
+
+How to Run?
+
+Connect your Android device → enable USB Debugging
+```bash
+flutter clean
+flutter pub get
+flutter run
+
+
+
+
