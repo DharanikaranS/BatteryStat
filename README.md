@@ -16,11 +16,20 @@ Communication between Flutter and Android is done using **MethodChannels**.
 ---
 
 ## 📁 Project Structure
-/lib
-└── main.dart
 
-/android/app/src/main/kotlin/<package>/
-└── MainActivity.kt
+project/
+├── lib/
+│   └── main.dart
+│
+└── android/
+    └── app/
+        └── src/
+            └── main/
+                └── kotlin/
+                    └── com/
+                        └── example/
+                            └── batterystat/
+                                └── MainActivity.kt
 
 
 How to Run?
